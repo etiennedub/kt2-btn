@@ -16,7 +16,7 @@ The following pieces are required:
 The Kindle need root access without password.
 
 ## Documentation
-The principle is really simple, every time someone presses the next page button, the ATtiny10 will send *sudo\nF\n* at 115200 bps on the Kindle Rx pin. The previous command will connect as *root* and execute the ***F*** program witch will simulate a touch press on the right side of the screen. The same thing is produce with the previous page button but the message will be *sudo\nB\n* witch will execute the ***B*** program.
+The principle is really simple, every time someone presses the next page button, the ATtiny10 will send *sudo\nF\n* at 115200 bps on the Kindle Rx pin. The previous command will connect as *root* and execute the ***F*** program which will simulate a touch press on the right side of the screen. The same thing is produced with the previous page button but the message will be *sudo\nB\n* which will execute the ***B*** program.
 
 ### Diagram
 
@@ -39,15 +39,6 @@ Binary files, **bw** and **fw**,  can be found in *kindle/bin* folder of the rep
 Flash *main.hex* on the ATtiny10, you can also compile from source. I use a Arduino and follow this [tutorial](http://junkplusarduino.blogspot.ca/p/attiny10-resources.html) to flash it. 
 
 ## Development Status
-At this moment, the pages can change but the ATtiny10 still need external source. I din't find a good pin on the Kindle where I can connect the ATtiny10 VCC pin. I'm looking to add a 1.8v regulator directly to the Kindle battery. Also, I din't add the buttons to the Kindle case yet.
+At this moment, the pages can change but the ATtiny10 still need external source. I didn't find a good pin on the Kindle where I can connect the ATtiny10 VCC pin. I'm looking to add a 1.8v regulator directly to the Kindle battery. Also, I didn't add the buttons to the Kindle case yet.
 
 The project is still in development and I will update this repository with any further update.
-
-
-
-
-
-
-
-
-
